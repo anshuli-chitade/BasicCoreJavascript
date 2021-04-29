@@ -12,5 +12,5 @@
         countTails++;
       }
   }
-  alert("percentage of Tails "+(countTails/Times)*100+"% time than heads");
+  console.log("percentage of Tails "+(countTails/Times)*100+"% time than heads");
       
