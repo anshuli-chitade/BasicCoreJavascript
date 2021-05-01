@@ -1,14 +1,23 @@
 
- var result;
- var year = prompt("enter an year");
- if(len<4){
-   console.log(" an year should be 4 digit")
+const year = prompt("Enter an year");
+const len = year.length;
+
+const checkyear = (year) => {
+  if (year % 400 == 0) {
+    return true;
+  }
+  if (year % 100 == 0) {
+    return false;
+  }
+  if (year % 4 == 0) {
+    return true;
+  }
 }
-else if(year%4==0){
-  console.log( +year+ " is a leap year")
+if (len < 4) {
+  console.log(" an year should be 4 digit");
 }
- else{
-    console.log( +year+ " is not a leap year");
- }
-    
-    
+else {
+  console.log(checkyear(year) ? "is a leap year" : "not a leap year");
+}
+
+
