@@ -1,5 +1,6 @@
-
-const number = prompt("Enter a number");
+const read = require("readline-sync");
+console.log("Enter an number")
+const number = read.questionInt();
 
 if (number < 31) {
     for (i = 1; i <= number; i++) {

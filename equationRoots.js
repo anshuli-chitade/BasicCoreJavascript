@@ -1,3 +1,4 @@
+const read=require("readline-sync");
 const calculate=(a,b,c)=>{
 
 let formula = b * b - 4 * a * c;
@@ -21,7 +22,10 @@ else {
 }
 
 let root1, root2;
-let a = prompt("Enter the first number: ");
-let b = prompt("Enter the second number: ");
-let c = prompt("Enter the third number: ");
+console.log("Enter the first number: ")
+let a = read.questionInt();
+console.log("Enter the second number: ")
+let b = read.questionInt();
+console.log("Enter the third number: ")
+let c = read.questionInt();
 calculate(a,b,c);

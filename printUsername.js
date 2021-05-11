@@ -1,5 +1,5 @@
-
-var username = prompt("Enter your name");
+const read = require("readline-sync")
+var username = read.question("May i have your name:")
 var len = username.length;
 
 if (username != null && len > 3) {

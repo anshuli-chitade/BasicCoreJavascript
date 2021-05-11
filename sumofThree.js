@@ -16,5 +16,5 @@ const findTriplets = (arr) => {
         console.log(" not exist ");
     }
 }
-arr = [1, -2, 1, 0, 5];
+arr = [1, -2, 2, 3, 1,0];
 findTriplets(arr);

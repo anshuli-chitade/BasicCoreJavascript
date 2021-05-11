@@ -1,10 +1,10 @@
-
+const read = require("readline-sync")
 const coinFlip = () => {
   return (Math.random() < 0.5) ? 'Tails' : 'Heads';
 }
-
-const Times = prompt("number of times coin to be flipped? ");
-const countTails = 0;
+console.log("number of times coin to be flipped? ")
+const Times = read.questionInt();
+let countTails = 0;
 for (var i = 0; i < Times; i++) {
   if (coinFlip() === 'Tails') {
     countTails++;

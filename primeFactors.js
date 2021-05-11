@@ -1,4 +1,4 @@
-
+const read = require("readline-sync")
 const primeFactors = (num) => {
 
    while (num % 2 == 0) {
@@ -15,8 +15,8 @@ const primeFactors = (num) => {
       console.log("" + num + "");
    }
 }
-
-const num = prompt("Enter a number: ");
+console.log("Enter a number: ")
+const num = read.questionInt();
 primeFactors(num);
 
 
